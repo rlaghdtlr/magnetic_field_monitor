@@ -173,7 +173,7 @@ class StatusCommands:
                     "description": self._get_battery_description(battery_status),
                 },
                 "b_field": {
-                    "value": b_field_value,
+                    "value": b_field_value / (10 if unit_type else 100),
                     "unit": "mG" if unit_type else "uT",
                 },
                 "gps": {
